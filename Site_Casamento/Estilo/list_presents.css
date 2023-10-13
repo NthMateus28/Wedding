@@ -118,16 +118,14 @@ body > article > form:nth-child(3) > button, body > footer > div:nth-child(1) > 
 
     /* Defina uma largura máxima para o banner e o rodapé */
     .banner, .footer {
-        /* margin-top: 200px; */
         max-width: 100%;
-        position: absolute;
     }
 
-    /* Reduza as margens do texto principal */
+    /* Reduza as margens do texto principal e adicione espaço suficiente para o banner */
     .main-text {
         margin-right: 1rem;
         margin-left: 1rem;
-        margin-top: 200px;
+        margin-top: 10rem; /* Ajuste a margem superior para criar espaço para o banner */
     }
 
     /* Reduza as margens do card */
@@ -162,8 +160,9 @@ body > article > form:nth-child(3) > button, body > footer > div:nth-child(1) > 
         font-size: 14px;
     }
 
-    body > footer > div:nth-child(2) > span{
+    body > footer > div:nth-child(2) > span {
         text-align: end;
         font-size: 16px;
     }
 }
+
