@@ -118,7 +118,7 @@ body > article > form:nth-child(3) > button, body > footer > div:nth-child(1) > 
 
     /* Defina uma largura máxima para o banner e o rodapé */
     .banner, .footer {
-        margin-top: 200px;
+        /* margin-top: 200px; */
         max-width: 100%;
         position: absolute;
     }
@@ -127,7 +127,7 @@ body > article > form:nth-child(3) > button, body > footer > div:nth-child(1) > 
     .main-text {
         margin-right: 1rem;
         margin-left: 1rem;
-        margin-top: 2rem;
+        margin-top: 200px;
     }
 
     /* Reduza as margens do card */
