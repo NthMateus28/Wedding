@@ -1,267 +1,263 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de presença</title>
-    <link rel="stylesheet" href="../Estilo/list_presents.css">
-    <script defer src="../Script/list_presents.js"></script>
-    <script defer>
-        document.addEventListener('DOMContentLoaded', function () {
-            atualizarTotal();
-        });
-    </script>
-    <link rel="shortcut icon" href="../images/logo_casamento.png" type="image/x-icon">
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de presença</title>
+        <link rel="stylesheet" href="../Estilo/list_presents.css">
+        <script defer src="../Script/list_presents.js"></script>
+        <script defer>
+            document.addEventListener('DOMContentLoaded', function () {
+                atualizarTotal();
+            });
+        </script>
+        <link rel="shortcut icon" href="../images/logo_casamento.png" type="image/x-icon">
 
-</head>
-<body>
-    <img src="https://drive.google.com/uc?export=view&id=1-NwblQdkpNgYH1tALMFnll22seN7gOPH" alt="Banner" class="banner">
+    </head>
+    <body>
+        <img src="https://drive.google.com/uc?export=view&id=1-NwblQdkpNgYH1tALMFnll22seN7gOPH" alt="Banner" class="banner">
 
-    <hr>
+        <hr>
 
-<h1>Lista de Presença!</h1>
+    <h1>Lista de Presença!</h1>
 
-<div class="main-text">
-    <p>Nós, Elisiane e Mateus, estamos muito animados para compartilhar nosso dia especial com você. Sabemos que muitos de nossos amigos e familiares estão vindo de longe para estar conosco, o que torna ainda mais especial para nós.</p>
-    <p>Por favor, confirme sua presença até 10 de Janeiro de 2024. Você pode nos informar se estará presente deixando seu nome abaixo:</p>
-</div>
-    
-<article>
-    <form>
+    <div class="main-text">
+        <p>Nós, Elisiane e Mateus, estamos muito animados para compartilhar nosso dia especial com você. Sabemos que muitos de nossos amigos e familiares estão vindo de longe para estar conosco, o que torna ainda mais especial para nós.</p>
+        <p>Por favor, confirme sua presença até 10 de Janeiro de 2024. Você pode nos informar se estará presente deixando seu nome abaixo:</p>
+    </div>
+        
+    <article>
+        <form>
 
-        <h4>SELECIONE A CAIXA DE SELEÇÃO AO LADO DO SEU NOME:</h4>
-        <div class="card">
-            <ul class="name-list">
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="argolo" name="nomes" value="ARGOLO e MARLISE">
-                    <label for="argolo">ARGOLO e MARLISE</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="ariela" name="nomes" value="ARIELA">
-                    <label for="ariela">ARIELA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="claudio-da-roza" name="nomes" value="CLAUDIO DA ROZA e LORECI">
-                    <label for="claudio-da-roza">CLAUDIO DA ROZA e LORECI</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="dercy-ferreira"
-                    name="nomes" value="DERCY FERREIRA">
-                    <label for="dercy-ferreira">DERCY FERREIRA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="eduarda-noscoski" name="nomes" value="EDUARDA NOSCOSKI">
-                    <label for="eduarda-noscoski">EDUARDA NOSCOSKI</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="evandro-manuela" name="nomes" value="EVANDRO e MANUELA">
-                    <label for="evandro-manuela">EVANDRO e MANUELA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="everaldo-adriana" name="nomes" value="EVERALDO e ADRIANA">
-                    <label for="everaldo-adriana">EVERALDO e ADRIANA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="gabriel-matos-anelize-isadora" name="nomes" value="GABRIEL MATOS, ANELIZE e ISADORA">
-                    <label for="gabriel-matos-anelize-isadora">GABRIEL MATOS, ANELIZE e ISADORA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="jacson" name="nomes" value="JACSON e FAMÍLIA">
-                    <label for="jacson">JACSON e FAMÍLIA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="jayane" name="nomes" value="JAYANE">
-                    <label for="jayane">JAYANE</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="joel-junior-michel-familia" name="nomes" value="JOEL JUNIOR MICHEL e FAMÍLIA">
-                    <label for="joel-junior-michel-familia">JOEL JUNIOR MICHEL e FAMÍLIA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="josue-david-familia" name="nomes" value="JOSUÉ DAVID e FAMÍLIA">
-                    <label for="josue-david-familia">JOSUÉ DAVID e FAMÍLIA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="jucei-carina-luiza" name="nomes" value="JUCEI, CARINA E LUIZA">
-                    <label for="jucei-carina-luiza">JUCEI, CARINA E LUIZA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="kalebe-dhebora" name="nomes" value="KALEBE e DHEBORA">
-                    <label for="kalebe-dhebora">KALEBE e DHEBORA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="kemily" name="nomes" value="KEMILY">
-                    <label for="kemily">KEMILY</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="lucas-suares-familia" name="nomes" value="LUCAS SUARES e FAMÍLIA">
-                    <label for="lucas-suares-familia">LUCAS SUARES e FAMÍLIA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="luciana-padilha" name="nomes" value="LUCIANA PADILHA">
-                    <label for="luciana-padilha">LUCIANA PADILHA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="maique-souza-familia" name="nomes" value="MAIQUE SOUZA e FAMÍLIA">
-                    <label for="maique-souza-familia">MAIQUE SOUZA e FAMÍLIA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="marcos" name="nomes" value="MARCOS">
-                    <label for="marcos">MARCOS</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="marcos-macedo" name="nomes" value="MARCOS MACEDO e FAMÍLIA">
-                    <label for="marcos-macedo">MARCOS MACEDO e FAMÍLIA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="marcus" name="nomes" value="MARCUS">
-                    <label for="marcus">MARCUS</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="odila-belarmino" name="nomes" value="ODILA BELARMINO">
-                    <label for="odila-belarmino">ODILA BELARMINO</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="orbelina-da-silva" name="nomes" value="ORBELINA DA SILVA">
-                    <label for="orbelina-da-silva">ORBELINA DA SILVA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="pedro-henrique" name="nomes" value="PEDRO HENRIQUE">
-                    <label for="pedro-henrique">PEDRO HENRIQUE</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="roseli-silva-nilto" name="nomes" value="ROSELI SILVA e NILTON">
-                    <label for="roseli-silva-nilto">ROSELI SILVA e NILTON</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="samoel-r-familia" name="nomes" value="SAMOEL R e FAMÍLIA">
-                    <label for="samoel-r-familia">SAMOEL R e FAMÍLIA</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="thiago-macedo-sarini" name="nomes" value="THIAGO MACEDO e SARINI">
-                    <label for="thiago-macedo-sarini">THIAGO MACEDO e SARINI</label>
-                </li>
-                <li class="name-item">
-                    <input type="radio" class="checkbox" id="ubiratan-familia" name="nomes" value="UBIRATAN e FAMÍLIA">
-                    <label for="ubiratan-familia">UBIRATAN e FAMÍLIA</label>
-                </li>            
-                        </ul>
+            <h4>SELECIONE A CAIXA DE SELEÇÃO AO LADO DO SEU NOME:</h4>
+            <div class="card">
+                <ul class="name-list">
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="argolo" name="nomes" value="ARGOLO e MARLISE">
+                        <label for="argolo">ARGOLO e MARLISE</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="ariela" name="nomes" value="ARIELA">
+                        <label for="ariela">ARIELA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="claudio-da-roza" name="nomes" value="CLAUDIO DA ROZA e LORECI">
+                        <label for="claudio-da-roza">CLAUDIO DA ROZA e LORECI</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="dercy-ferreira"
+                        name="nomes" value="DERCY FERREIRA">
+                        <label for="dercy-ferreira">DERCY FERREIRA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="eduarda-noscoski" name="nomes" value="EDUARDA NOSCOSKI">
+                        <label for="eduarda-noscoski">EDUARDA NOSCOSKI</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="evandro-manuela" name="nomes" value="EVANDRO e MANUELA">
+                        <label for="evandro-manuela">EVANDRO e MANUELA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="everaldo-adriana" name="nomes" value="EVERALDO e ADRIANA">
+                        <label for="everaldo-adriana">EVERALDO e ADRIANA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="gabriel-matos-anelize-isadora" name="nomes" value="GABRIEL MATOS, ANELIZE e ISADORA">
+                        <label for="gabriel-matos-anelize-isadora">GABRIEL MATOS, ANELIZE e ISADORA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="jacson" name="nomes" value="JACSON e FAMÍLIA">
+                        <label for="jacson">JACSON e FAMÍLIA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="jayane" name="nomes" value="JAYANE">
+                        <label for="jayane">JAYANE</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="joel-junior-michel-familia" name="nomes" value="JOEL JUNIOR MICHEL e FAMÍLIA">
+                        <label for="joel-junior-michel-familia">JOEL JUNIOR MICHEL e FAMÍLIA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="josue-david-familia" name="nomes" value="JOSUÉ DAVID e FAMÍLIA">
+                        <label for="josue-david-familia">JOSUÉ DAVID e FAMÍLIA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="jucei-carina-luiza" name="nomes" value="JUCEI, CARINA E LUIZA">
+                        <label for="jucei-carina-luiza">JUCEI, CARINA E LUIZA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="kalebe-dhebora" name="nomes" value="KALEBE e DHEBORA">
+                        <label for="kalebe-dhebora">KALEBE e DHEBORA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="kemily" name="nomes" value="KEMILY">
+                        <label for="kemily">KEMILY</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="lucas-suares-familia" name="nomes" value="LUCAS SUARES e FAMÍLIA">
+                        <label for="lucas-suares-familia">LUCAS SUARES e FAMÍLIA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="luciana-padilha" name="nomes" value="LUCIANA PADILHA">
+                        <label for="luciana-padilha">LUCIANA PADILHA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="maique-souza-familia" name="nomes" value="MAIQUE SOUZA e FAMÍLIA">
+                        <label for="maique-souza-familia">MAIQUE SOUZA e FAMÍLIA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="marcos" name="nomes" value="MARCOS">
+                        <label for="marcos">MARCOS</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="marcos-macedo" name="nomes" value="MARCOS MACEDO e FAMÍLIA">
+                        <label for="marcos-macedo">MARCOS MACEDO e FAMÍLIA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="marcus" name="nomes" value="MARCUS">
+                        <label for="marcus">MARCUS</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="odila-belarmino" name="nomes" value="ODILA BELARMINO">
+                        <label for="odila-belarmino">ODILA BELARMINO</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="orbelina-da-silva" name="nomes" value="ORBELINA DA SILVA">
+                        <label for="orbelina-da-silva">ORBELINA DA SILVA</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="pedro-henrique" name="nomes" value="PEDRO HENRIQUE">
+                        <label for="pedro-henrique">PEDRO HENRIQUE</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="roseli-silva-nilto" name="nomes" value="ROSELI SILVA e NILTON">
+                        <label for="roseli-silva-nilto">ROSELI SILVA e NILTON</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="thiago-macedo-sarini" name="nomes" value="THIAGO MACEDO e SARINI">
+                        <label for="thiago-macedo-sarini">THIAGO MACEDO e SARINI</label>
+                    </li>
+                    <li class="name-item">
+                        <input type="radio" class="checkbox" id="ubiratan-familia" name="nomes" value="UBIRATAN e FAMÍLIA">
+                        <label for="ubiratan-familia">UBIRATAN e FAMÍLIA</label>
+                    </li>            
+                            </ul>
+                        </div>
+                        <div class="card">
+                        <h4>FOMRA DE PAGAMENTO:</h4>
+                        <div class="text-card-two">
+                            <p>Prezados,</p>
+                            <p>É com grande alegria que recebemos sua confirmação de presença em nosso casamento. Gostaríamos de lembrar que, para garantir sua reserva, é necessário efetuar o pagamento até a data de vencimento informada no convite.</p>
+                            <p>Para facilitar o processo, disponibilizamos uma chave PIX para que você possa efetuar o pagamento. Caso queira pagar no cartão de crédito, é só selecionar a opção de pagamento, cartão de crédito!</p>
+                            <p>Pedimos que, após realizar o pagamento, nos envie o comprovante para o WhatsApp de um dos noivos. Os nossos WhatsApp são (54) 9 9196-5403 ou (51) 9 8152-3436, com o assunto “Confirmação de Pagamento – Casamento Elisiane e Mateus”. Dessa forma, poderemos confirmar a sua reserva e garantir que sua presença seja registrada em nosso planejamento.</p>
+                            <p>Buffet Livre com bebidas liberadas!</p>
+                            <p></p>
+                            <p>Adulto = R$56,OO</p>
+                            <p></p>
+                            <p>Criança de 6 - 12 Anos = R$28,00</p>
+                            <p></p>
+                            <p>Criança de 0 - 6 = Não paga</p>
+                            <p>Agradecemos novamente pela sua presença e por fazer parte deste momento especial em nossas vidas.</p>
+                            <p></p>
+                        </div>
+                        <div class="text-card-two">
+                            <h4>QUAL SUA FORMA DE PAGAMENTO? LEMBRANDO QUE O VALOR POR PESSOA É DE R$56,00</h4>
+                            <div>
+                            <ul class="name-list">
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="pix" name="forma_pagamento" value="PIX">
+                                    <label for="pix">PIX</label>
+                                </li>
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="cartao" name="forma_pagamento" value="CARTAO">
+                                    <label for="cartao">CARTÃO</label>
+                                </li>
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="dinheiro" name="forma_pagamento" value="DINHEIRO">
+                                    <label for="dinheiro">DINHEIRO</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     </div>
                     <div class="card">
-                    <h4>FOMRA DE PAGAMENTO:</h4>
-                    <div class="text-card-two">
-                        <p>Prezados,</p>
-                        <p>É com grande alegria que recebemos sua confirmação de presença em nosso casamento. Gostaríamos de lembrar que, para garantir sua reserva, é necessário efetuar o pagamento até a data de vencimento informada no convite.</p>
-                        <p>Para facilitar o processo, disponibilizamos uma chave PIX para que você possa efetuar o pagamento. Caso queira pagar no cartão de crédito, é só selecionar a opção de pagamento, cartão de crédito!</p>
-                        <p>Pedimos que, após realizar o pagamento, nos envie o comprovante para o WhatsApp de um dos noivos. Os nossos WhatsApp são (54) 9 9196-5403 ou (51) 9 8152-3436, com o assunto “Confirmação de Pagamento – Casamento Elisiane e Mateus”. Dessa forma, poderemos confirmar a sua reserva e garantir que sua presença seja registrada em nosso planejamento.</p>
-                        <p>Buffet Livre com bebidas liberadas!</p>
-                        <p></p>
-                        <p>Adulto = R$56,OO</p>
-                        <p></p>
-                        <p>Criança de 6 - 12 Anos = R$28,00</p>
-                        <p></p>
-                        <p>Criança de 0 - 6 = Não paga</p>
-                        <p>Agradecemos novamente pela sua presença e por fazer parte deste momento especial em nossas vidas.</p>
-                        <p></p>
-                    </div>
-                    <div class="text-card-two">
-                        <h4>QUAL SUA FORMA DE PAGAMENTO? LEMBRANDO QUE O VALOR POR PESSOA É DE R$56,00</h4>
+                        <h4>QUANTAS PESSOAS DE SUA FAMÍLIA ESTARÃO?</h4>
                         <div>
-                        <ul class="name-list">
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="pix" name="forma_pagamento" value="PIX">
-                                <label for="pix">PIX</label>
-                            </li>
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="cartao" name="forma_pagamento" value="CARTAO">
-                                <label for="cartao">CARTÃO</label>
-                            </li>
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="dinheiro" name="forma_pagamento" value="DINHEIRO">
-                                <label for="dinheiro">DINHEIRO</label>
-                            </li>
-                        </ul>
+                            <ul class="name-list">
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="familia-1" name="familia" value="1">
+                                    <label for="familia-1">1 Pessoa</label>
+                                </li>
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="familia-2" name="familia" value="2">
+                                    <label for="familia-2">2 Pessoas</label>
+                                </li>
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="familia-3" name="familia" value="3">
+                                    <label for="familia-3">3 Pessoas</label>
+                                </li>
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="familia-4" name="familia" value="4">
+                                    <label for="familia-4">4 Pessoas</label>
+                                </li>
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="familia-5" name="familia" value="5">
+                                    <label for="familia-5">5 Pessoas</label>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <h4>NOS DIGA QUANTAS CRIANÇAS DE 6 a 12 ESTARÃO EM NOSSO CASAMENTO?</h4>
+                        <div>
+                            <ul class="name-list">
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="crianca-6-12-1" name="crianca_6_12" value="1">
+                                    <label for="crianca-6-12-1">1 Criança</label>
+                                </li>
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="crianca-6-12-2" name="crianca_6_12" value="2">
+                                    <label for="crianca-6-12-2">2 Crianças</label>
+                                </li>
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="crianca-6-12-3" name="crianca_6_12" value="3">
+                                    <label for="crianca-6-12-3">3 Crianças</label>
+                                </li>
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="crianca-6-12-0" name="crianca_6_12" value="0">
+                                    <label for="crianca-6-12-0">Nenhuma</label>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <h4>NOS DIGA QUANTAS CRIANÇAS DE ATÉ 6 ANOS ESTARÃO EM NOSSO CASAMENTO?</h4>
+                        <div>
+                            <ul class="name-listUlt">
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="crianca-0-6-1" name="crianca_0_6" value="1">
+                                    <label for="crianca-0-6-1">1 Criança</label>
+                                </li>
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="crianca-0-6-2" name="crianca_0_6" value="2">
+                                    <label for="crianca-0-6-2">2 Crianças</label>
+                                </li>
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="crianca-0-6-3" name="crianca_0_6" value="3">
+                                    <label for="crianca-0-6-3">3 Crianças</label>
+                                </li>
+                                <li class="name-item">
+                                    <input type="radio" class="checkbox" id="crianca-0-6-0" name="crianca_0_6" value="0">
+                                    <label for="crianca-0-6-0">Nenhuma</label>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                </div>
-                <div class="card">
-                    <h4>QUANTAS PESSOAS DE SUA FAMÍLIA ESTARÃO?</h4>
-                    <div>
-                        <ul class="name-list">
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="familia-1" name="familia" value="1">
-                                <label for="familia-1">1 Pessoa</label>
-                            </li>
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="familia-2" name="familia" value="2">
-                                <label for="familia-2">2 Pessoas</label>
-                            </li>
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="familia-3" name="familia" value="3">
-                                <label for="familia-3">3 Pessoas</label>
-                            </li>
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="familia-4" name="familia" value="4">
-                                <label for="familia-4">4 Pessoas</label>
-                            </li>
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="familia-5" name="familia" value="5">
-                                <label for="familia-5">5 Pessoas</label>
-                            </li>
-                        </ul>
-                    </div>
-                
-                    <h4>NOS DIGA QUANTAS CRIANÇAS DE 6 a 12 ESTARÃO EM NOSSO CASAMENTO?</h4>
-                    <div>
-                        <ul class="name-list">
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="crianca-6-12-1" name="crianca_6_12" value="1">
-                                <label for="crianca-6-12-1">1 Criança</label>
-                            </li>
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="crianca-6-12-2" name="crianca_6_12" value="2">
-                                <label for="crianca-6-12-2">2 Crianças</label>
-                            </li>
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="crianca-6-12-3" name="crianca_6_12" value="3">
-                                <label for="crianca-6-12-3">3 Crianças</label>
-                            </li>
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="crianca-6-12-0" name="crianca_6_12" value="0">
-                                <label for="crianca-6-12-0">Nenhuma</label>
-                            </li>
-                        </ul>
-                    </div>
-                
-                    <h4>NOS DIGA QUANTAS CRIANÇAS DE ATÉ 6 ANOS ESTARÃO EM NOSSO CASAMENTO?</h4>
-                    <div>
-                        <ul class="name-listUlt">
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="crianca-0-6-1" name="crianca_0_6" value="1">
-                                <label for="crianca-0-6-1">1 Criança</label>
-                            </li>
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="crianca-0-6-2" name="crianca_0_6" value="2">
-                                <label for="crianca-0-6-2">2 Crianças</label>
-                            </li>
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="crianca-0-6-3" name="crianca_0_6" value="3">
-                                <label for="crianca-0-6-3">3 Crianças</label>
-                            </li>
-                            <li class="name-item">
-                                <input type="radio" class="checkbox" id="crianca-0-6-0" name="crianca_0_6" value="0">
-                                <label for="crianca-0-6-0">Nenhuma</label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-</article>
+    </article>
 
-<footer class="footer" style="display: flex;position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f8dc88; color: black; padding: 10px; text-align: justify;">
-    <div style="width: 50%; text-align: center;"><button type="submit" id="submit-button">Enviar</button></div>
-    <div style="width: 40%; display: flex; justify-content: center; align-items: center; text-align: center;"><span>Total a pagar: <span id="total-a-pagar">R$ 0,00</span></span></div>
-      </footer>
-</form>
+    <footer class="footer" style="display: flex;position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f8dc88; color: black; padding: 10px; text-align: justify;">
+        <div style="width: 50%; text-align: center;"><button type="submit" id="submit-button">Enviar</button></div>
+        <div style="width: 40%; display: flex; justify-content: center; align-items: center; text-align: center;"><span>Total a pagar: <span id="total-a-pagar">R$ 0,00</span></span></div>
+        </footer>
+    </form>
 
-</body>
-</html>
+    </body>
+    </html>
